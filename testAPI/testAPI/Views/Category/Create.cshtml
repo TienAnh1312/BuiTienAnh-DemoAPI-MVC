@@ -1,0 +1,14 @@
+﻿@model testAPI.Models.Category
+
+<h1>Create Category</h1>
+<form asp-action="Create" method="post">
+    <div>
+        <label>Name</label>
+        <input asp-for="Name" />
+    </div>
+    <div>
+        <label>Description</label>
+        <input asp-for="Description" />
+    </div>
+    <button type="submit">Create</button>
+</form>

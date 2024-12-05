@@ -1,0 +1,23 @@
+﻿@model testAPI.Models.Category
+
+<h1>Edit Category</h1>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="CategoryId" />
+
+    <div>
+        <label for="Name">Name</label>
+        <input asp-for="Name" id="Name" />
+        <span asp-validation-for="Name"></span>
+    </div>
+
+    <div>
+        <label for="Description">Description</label>
+        <input asp-for="Description" id="Description" />
+        <span asp-validation-for="Description"></span>
+    </div>
+
+    <button type="submit">Save Changes</button>
+</form>
+
+<a asp-action="Index">Back to List</a>
